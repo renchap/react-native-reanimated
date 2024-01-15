@@ -32,6 +32,7 @@ export default function AnimatedKeyboardExample() {
     };
   });
   const translateStyle = useAnimatedStyle(() => {
+    console.log(keyboard.state.value, keyboard.height.value);
     return {
       transform: [{ translateY: -keyboard.height.value }],
     };
